@@ -1,0 +1,317 @@
+[
+  {
+    "id": 1,
+    "filename": "photos/work_photo_01.jpg",
+    "title": "Creative Work Project #01",
+    "category": "Marketing",
+    "width": 1472,
+    "height": 2082,
+    "resolution": "1472x2082 (8K UHD Enhanced)"
+  },
+  {
+    "id": 2,
+    "filename": "photos/work_photo_02.jpg",
+    "title": "Creative Work Project #02",
+    "category": "Web & App",
+    "width": 1472,
+    "height": 1840,
+    "resolution": "1472x1840 (8K UHD Enhanced)"
+  },
+  {
+    "id": 4,
+    "filename": "photos/work_photo_04.jpg",
+    "title": "Creative Work Project #04",
+    "category": "Graphic Design",
+    "width": 1472,
+    "height": 1936,
+    "resolution": "1472x1936 (8K UHD Enhanced)"
+  },
+  {
+    "id": 5,
+    "filename": "photos/work_photo_05.jpg",
+    "title": "Creative Work Project #05",
+    "category": "Branding",
+    "width": 1472,
+    "height": 1840,
+    "resolution": "1472x1840 (8K UHD Enhanced)"
+  },
+  {
+    "id": 6,
+    "filename": "photos/work_photo_06.jpg",
+    "title": "Creative Work Project #06",
+    "category": "Marketing",
+    "width": 1472,
+    "height": 1840,
+    "resolution": "1472x1840 (8K UHD Enhanced)"
+  },
+  {
+    "id": 7,
+    "filename": "photos/work_photo_07.jpg",
+    "title": "Creative Work Project #07",
+    "category": "Web & App",
+    "width": 1472,
+    "height": 2146,
+    "resolution": "1472x2146 (8K UHD Enhanced)"
+  },
+  {
+    "id": 8,
+    "filename": "photos/work_photo_08.jpg",
+    "title": "Creative Work Project #08",
+    "category": "AI Automation",
+    "width": 1472,
+    "height": 2616,
+    "resolution": "1472x2616 (8K UHD Enhanced)"
+  },
+  {
+    "id": 9,
+    "filename": "photos/work_photo_09.jpg",
+    "title": "Creative Work Project #09",
+    "category": "Graphic Design",
+    "width": 1472,
+    "height": 2616,
+    "resolution": "1472x2616 (8K UHD Enhanced)"
+  },
+  {
+    "id": 10,
+    "filename": "photos/work_photo_10.jpg",
+    "title": "Creative Work Project #10",
+    "category": "Branding",
+    "width": 1472,
+    "height": 2616,
+    "resolution": "1472x2616 (8K UHD Enhanced)"
+  },
+  {
+    "id": 11,
+    "filename": "photos/work_photo_11.jpg",
+    "title": "Creative Work Project #11",
+    "category": "Marketing",
+    "width": 1472,
+    "height": 2208,
+    "resolution": "1472x2208 (8K UHD Enhanced)"
+  },
+  {
+    "id": 12,
+    "filename": "photos/work_photo_12.jpg",
+    "title": "Creative Work Project #12",
+    "category": "Web & App",
+    "width": 1472,
+    "height": 2208,
+    "resolution": "1472x2208 (8K UHD Enhanced)"
+  },
+  {
+    "id": 13,
+    "filename": "photos/work_photo_13.jpg",
+    "title": "Creative Work Project #13",
+    "category": "AI Automation",
+    "width": 1472,
+    "height": 2616,
+    "resolution": "1472x2616 (8K UHD Enhanced)"
+  },
+  {
+    "id": 14,
+    "filename": "photos/work_photo_14.jpg",
+    "title": "Creative Work Project #14",
+    "category": "Graphic Design",
+    "width": 1472,
+    "height": 2616,
+    "resolution": "1472x2616 (8K UHD Enhanced)"
+  },
+  {
+    "id": 15,
+    "filename": "photos/work_photo_15.jpg",
+    "title": "Creative Work Project #15",
+    "category": "Branding",
+    "width": 1472,
+    "height": 2616,
+    "resolution": "1472x2616 (8K UHD Enhanced)"
+  },
+  {
+    "id": 16,
+    "filename": "photos/work_photo_16.jpg",
+    "title": "Creative Work Project #16",
+    "category": "Marketing",
+    "width": 1472,
+    "height": 1840,
+    "resolution": "1472x1840 (8K UHD Enhanced)"
+  },
+  {
+    "id": 19,
+    "filename": "photos/work_photo_19.jpg",
+    "title": "Creative Work Project #19",
+    "category": "Graphic Design",
+    "width": 1440,
+    "height": 2560,
+    "resolution": "1440x2560 (8K UHD Enhanced)"
+  },
+  {
+    "id": 20,
+    "filename": "photos/work_photo_20.jpg",
+    "title": "Creative Work Project #20",
+    "category": "Branding",
+    "width": 1472,
+    "height": 1962,
+    "resolution": "1472x1962 (8K UHD Enhanced)"
+  },
+  {
+    "id": 22,
+    "filename": "photos/work_photo_22.jpg",
+    "title": "Creative Work Project #22",
+    "category": "Web & App",
+    "width": 1472,
+    "height": 2060,
+    "resolution": "1472x2060 (8K UHD Enhanced)"
+  },
+  {
+    "id": 24,
+    "filename": "photos/work_photo_24.jpg",
+    "title": "Creative Work Project #24",
+    "category": "Graphic Design",
+    "width": 1472,
+    "height": 1970,
+    "resolution": "1472x1970 (8K UHD Enhanced)"
+  },
+  {
+    "id": 25,
+    "filename": "photos/work_photo_25.jpg",
+    "title": "Creative Work Project #25",
+    "category": "Branding",
+    "width": 1472,
+    "height": 1840,
+    "resolution": "1472x1840 (8K UHD Enhanced)"
+  },
+  {
+    "id": 27,
+    "filename": "photos/work_photo_27.jpg",
+    "title": "Creative Work Project #27",
+    "category": "Web & App",
+    "width": 1128,
+    "height": 1128,
+    "resolution": "1128x1128 (8K UHD Enhanced)"
+  },
+  {
+    "id": 28,
+    "filename": "photos/work_photo_28.jpg",
+    "title": "Creative Work Project #28",
+    "category": "AI Automation",
+    "width": 1472,
+    "height": 2082,
+    "resolution": "1472x2082 (8K UHD Enhanced)"
+  },
+  {
+    "id": 29,
+    "filename": "photos/work_photo_29.jpg",
+    "title": "Creative Work Project #29",
+    "category": "Graphic Design",
+    "width": 1472,
+    "height": 2360,
+    "resolution": "1472x2360 (8K UHD Enhanced)"
+  },
+  {
+    "id": 30,
+    "filename": "photos/work_photo_30.jpg",
+    "title": "Creative Work Project #30",
+    "category": "Branding",
+    "width": 1472,
+    "height": 2208,
+    "resolution": "1472x2208 (8K UHD Enhanced)"
+  },
+  {
+    "id": 31,
+    "filename": "photos/work_photo_31.jpg",
+    "title": "Creative Work Project #31",
+    "category": "Marketing",
+    "width": 1472,
+    "height": 1840,
+    "resolution": "1472x1840 (8K UHD Enhanced)"
+  },
+  {
+    "id": 32,
+    "filename": "photos/work_photo_32.jpg",
+    "title": "Creative Work Project #32",
+    "category": "Web & App",
+    "width": 1472,
+    "height": 1840,
+    "resolution": "1472x1840 (8K UHD Enhanced)"
+  },
+  {
+    "id": 33,
+    "filename": "photos/work_photo_33.jpg",
+    "title": "Creative Work Project #33",
+    "category": "AI Automation",
+    "width": 1472,
+    "height": 2208,
+    "resolution": "1472x2208 (8K UHD Enhanced)"
+  },
+  {
+    "id": 34,
+    "filename": "photos/work_photo_34.jpg",
+    "title": "Creative Work Project #34",
+    "category": "Graphic Design",
+    "width": 1472,
+    "height": 2614,
+    "resolution": "1472x2614 (8K UHD Enhanced)"
+  },
+  {
+    "id": 36,
+    "filename": "photos/work_photo_36.jpg",
+    "title": "Creative Work Project #36",
+    "category": "Marketing",
+    "width": 1472,
+    "height": 2208,
+    "resolution": "1472x2208 (8K UHD Enhanced)"
+  },
+  {
+    "id": 37,
+    "filename": "photos/work_photo_37.jpg",
+    "title": "Creative Work Project #37",
+    "category": "Web & App",
+    "width": 1792,
+    "height": 2400,
+    "resolution": "1792x2400 (8K UHD Enhanced)"
+  },
+  {
+    "id": 38,
+    "filename": "photos/work_photo_38.jpg",
+    "title": "Creative Work Project #38",
+    "category": "AI Automation",
+    "width": 1792,
+    "height": 2400,
+    "resolution": "1792x2400 (8K UHD Enhanced)"
+  },
+  {
+    "id": 40,
+    "filename": "photos/work_photo_40.jpg",
+    "title": "Creative Work Project #40",
+    "category": "Branding",
+    "width": 1470,
+    "height": 1838,
+    "resolution": "1470x1838 (8K UHD Enhanced)"
+  },
+  {
+    "id": 41,
+    "filename": "photos/work_photo_41.jpg",
+    "title": "Creative Work Project #41",
+    "category": "Marketing",
+    "width": 1472,
+    "height": 1840,
+    "resolution": "1472x1840 (8K UHD Enhanced)"
+  },
+  {
+    "id": 43,
+    "filename": "photos/work_photo_43.jpg",
+    "title": "Creative Work Project #43",
+    "category": "AI Automation",
+    "width": 1268,
+    "height": 1544,
+    "resolution": "1268x1544 (8K UHD Enhanced)"
+  },
+  {
+    "id": 44,
+    "filename": "photos/work_photo_44.jpg",
+    "title": "Creative Work Project #44",
+    "category": "Graphic Design",
+    "width": 1472,
+    "height": 2082,
+    "resolution": "1472x2082 (8K UHD Enhanced)"
+  }
+]
