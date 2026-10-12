@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>My Work Showcase (8K Ultra HD) – Tanuj Sankhla</title>
+<meta name="description" content="Explore Tanuj Sankhla's work gallery. 8K Ultra HD showcase featuring all 35 digital marketing, web & app development, AI automation, graphic design, and branding projects."/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet"/>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Poppins',sans-serif;overflow-x:hidden;background:#fdfbf7;color:#2d2d2d;}
+
+/* ══ NAVBAR ══ */
+nav{
+  position:fixed;top:16px;left:50%;transform:translateX(-50%);width:calc(100% - 96px);max-width:1200px;z-index:9999;
+  background:rgba(253,251,247,0.85);
+  border:1px solid rgba(0,0,0,0.06);
+  border-radius:30px;
+  backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 36px;height:62px;
+  transition:all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow:0 10px 30px rgba(0,0,0,0.05);
+}
+nav.scrolled{background:rgba(255,255,255,0.95);box-shadow:0 15px 35px rgba(0,0,0,0.08);border-color:rgba(204,0,0,0.15);top:8px;}
+.logo{font-size:1.15rem;font-weight:800;color:#2d2d2d;letter-spacing:2px;text-transform:uppercase;text-decoration:none;}
+.logo span{color:#cc0000;}
+.nav-links{display:flex;gap:24px;list-style:none;align-items:center;}
+.nav-links a{
+  position:relative;
+  color:#2d2d2d;text-decoration:none;font-size:0.85rem;font-weight:600;opacity:.8;transition:all .3s ease;
+}
+.nav-links a::after{content:'';position:absolute;bottom:-6px;left:0;width:0;height:2px;background:#cc0000;transition:width 0.3s ease;box-shadow:0 0 8px rgba(204,0,0,0.3);}
+.nav-links a:hover, .nav-links a.active{opacity:1;color:#cc0000;}
+.nav-links a:hover::after, .nav-links a.active::after{width:100%;}
+.btn-hire{background:#cc0000;color:#fff;border:none;padding:8px 22px;border-radius:30px;font-weight:700;font-size:0.82rem;cursor:pointer;font-family:'Poppins',sans-serif;transition:transform .2s,box-shadow .2s;text-decoration:none;}
+.btn-hire:hover{transform:scale(1.05) translateY(-1px);box-shadow:0 8px 22px rgba(204,0,0,0.25);}
+
+/* ══ WORK HERO ══ */
+.work-hero{
+  padding:140px 32px 50px;
+  text-align:center;
+  background:linear-gradient(180deg, #f5f0e6 0%, #fdfbf7 100%);
+  position:relative;
+  overflow:hidden;
+}
+.work-hero::before{
+  content:'';position:absolute;top:-20%;left:50%;transform:translateX(-50%);
+  width:60%;height:100%;
+  background:radial-gradient(circle, rgba(204,0,0,0.06) 0%, transparent 70%);
+  pointer-events:none;
+}
+.hero-badge-8k{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(204,0,0,0.08);color:#cc0000;
+  border:1px solid rgba(204,0,0,0.2);
+  padding:6px 18px;border-radius:30px;
+  font-size:0.8rem;font-weight:800;letter-spacing:1.5px;
+  text-transform:uppercase;margin-bottom:16px;
+  box-shadow:0 4px 15px rgba(204,0,0,0.06);
+}
+.work-hero h1{
+  font-size:clamp(2.4rem, 5vw, 3.8rem);
+  font-weight:900;
+  color:#2d2d2d;
+  line-height:1.15;
+  margin-bottom:12px;
+}
+.work-hero h1 span{
+  color:#cc0000;
+  background:linear-gradient(135deg, #cc0000 0%, #ff4444 100%);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.work-hero p{
+  font-size:1.05rem;color:rgba(0,0,0,0.65);
+  max-width:680px;margin:0 auto 28px auto;
+  line-height:1.7;font-weight:500;
+}
+
+/* ══ SEARCH & FILTERS ══ */
+.filter-container{
+  max-width:1200px;margin:0 auto 36px auto;
+  padding:0 32px;
+  display:flex;flex-direction:column;gap:18px;align-items:center;
+}
+.search-box{
+  position:relative;width:100%;max-width:480px;
+}
+.search-box input{
+  width:100%;padding:14px 20px 14px 46px;
+  border-radius:30px;border:1px solid rgba(0,0,0,0.1);
+  background:rgba(255,255,255,0.95);
+  font-family:'Poppins',sans-serif;font-size:0.92rem;
+  outline:none;transition:all 0.3s;
+  box-shadow:0 6px 20px rgba(0,0,0,0.03);
+}
+.search-box input:focus{
+  border-color:rgba(204,0,0,0.4);
+  box-shadow:0 8px 25px rgba(204,0,0,0.12);
+}
+.search-box svg{
+  position:absolute;left:16px;top:50%;transform:translateY(-50%);
+  width:20px;height:20px;fill:rgba(0,0,0,0.4);
+}
+.category-pills{
+  display:flex;flex-wrap:wrap;gap:10px;justify-content:center;
+}
+.cat-pill{
+  background:rgba(255,255,255,0.85);
+  border:1px solid rgba(0,0,0,0.08);
+  color:#2d2d2d;
+  padding:8px 20px;border-radius:30px;
+  font-size:0.84rem;font-weight:600;
+  cursor:pointer;transition:all 0.3s ease;
+  box-shadow:0 4px 12px rgba(0,0,0,0.02);
+}
+.cat-pill:hover{
+  border-color:rgba(204,0,0,0.3);
+  color:#cc0000;transform:translateY(-2px);
+}
+.cat-pill.active{
+  background:#cc0000;color:#fff;
+  border-color:#cc0000;
+  box-shadow:0 6px 20px rgba(204,0,0,0.25);
+}
+
+/* ══ GALLERY GRID ══ */
+.gallery-section{
+  max-width:1400px;margin:0 auto 100px auto;
+  padding:0 32px;
+}
+.gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill, minmax(260px, 1fr));
+  gap:24px;
+}
+.work-card{
+  background:rgba(255,255,255,0.9);
+  border:1px solid rgba(0,0,0,0.06);
+  border-radius:20px;
+  overflow:hidden;
+  position:relative;
+  transition:all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  box-shadow:0 10px 30px rgba(0,0,0,0.04);
+  cursor:pointer;
+  display:flex;flex-direction:column;
+}
+.work-card:hover{
+  transform:translateY(-8px);
+  border-color:rgba(204,0,0,0.3);
+  box-shadow:0 20px 45px rgba(204,0,0,0.12);
+}
+.work-img-wrap{
+  position:relative;width:100%;
+  padding-top:125%; /* 4:5 aspect ratio */
+  overflow:hidden;
+  background:#111;
+}
+.work-img-wrap img{
+  position:absolute;top:0;left:0;
+  width:100%;height:100%;
+  object-fit:cover;
+  transition:transform 0.5s ease;
+  image-rendering:-webkit-optimize-contrast;
+  image-rendering:crisp-edges;
+}
+.work-card:hover .work-img-wrap img{
+  transform:scale(1.08);
+}
+.badge-8k-tag{
+  position:absolute;top:12px;right:12px;
+  background:rgba(0,0,0,0.75);
+  color:#ff4444;
+  border:1px solid rgba(255,68,68,0.4);
+  padding:3px 10px;border-radius:14px;
+  font-size:0.68rem;font-weight:800;
+  letter-spacing:1px;
+  backdrop-filter:blur(6px);
+  z-index:2;
+}
+.work-card-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.15) 60%, transparent 100%);
+  opacity:0;transition:opacity 0.3s ease;
+  display:flex;align-items:flex-end;padding:20px;
+  z-index:1;
+}
+.work-card:hover .work-card-overlay{opacity:1;}
+.overlay-content{color:#fff;}
+.overlay-content h4{font-size:1.05rem;font-weight:700;margin-bottom:4px;}
+.overlay-content p{font-size:0.78rem;opacity:0.85;font-weight:500;}
+
+.work-card-info{
+  padding:16px 18px;
+  display:flex;align-items:center;justify-content:space-between;
+  background:#fff;
+}
+.work-title{font-size:0.92rem;font-weight:700;color:#2d2d2d;}
+.work-cat{font-size:0.75rem;font-weight:600;color:#cc0000;background:rgba(204,0,0,0.06);padding:3px 10px;border-radius:12px;}
+
+/* ══ LIGHTBOX MODAL ══ */
+.lightbox-modal{
+  position:fixed;inset:0;z-index:99999;
+  background:rgba(10,10,10,0.94);
+  backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
+  display:none;flex-direction:column;
+  opacity:0;transition:opacity 0.35s ease;
+}
+.lightbox-modal.active{
+  display:flex;opacity:1;
+}
+.lightbox-header{
+  padding:16px 32px;
+  display:flex;align-items:center;justify-content:space-between;
+  background:rgba(20,20,20,0.8);
+  border-bottom:1px solid rgba(255,255,255,0.08);
+  color:#fff;
+}
+.lb-title-wrap h3{font-size:1.1rem;font-weight:800;color:#fff;}
+.lb-title-wrap p{font-size:0.8rem;color:rgba(255,255,255,0.6);}
+.lb-controls{display:flex;align-items:center;gap:12px;}
+.lb-btn{
+  background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.15);
+  color:#fff;padding:8px 16px;border-radius:20px;
+  font-family:'Poppins',sans-serif;font-size:0.8rem;font-weight:600;
+  cursor:pointer;transition:all 0.25s;
+  display:inline-flex;align-items:center;gap:6px;
+}
+.lb-btn:hover{
+  background:rgba(204,0,0,0.8);border-color:#cc0000;
+  box-shadow:0 0 15px rgba(204,0,0,0.4);
+}
+.lb-close{
+  width:40px;height:40px;border-radius:50%;
+  background:rgba(255,255,255,0.1);border:none;color:#fff;
+  font-size:1.4rem;cursor:pointer;display:flex;align-items:center;justify-content:center;
+  transition:all 0.2s;
+}
+.lb-close:hover{background:#cc0000;transform:scale(1.1);}
+
+.lightbox-body{
+  flex:1;position:relative;
+  display:flex;align-items:center;justify-content:center;
+  overflow:auto;padding:20px;
+}
+.lightbox-img-container{
+  max-width:90%;max-height:85vh;
+  position:relative;
+  transition:transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  box-shadow:0 20px 60px rgba(0,0,0,0.8), 0 0 40px rgba(204,0,0,0.15);
+  border-radius:12px;overflow:hidden;
+}
+.lightbox-img-container img{
+  display:block;max-width:100%;max-height:82vh;
+  object-fit:contain;
+  image-rendering:-webkit-optimize-contrast;
+  image-rendering:crisp-edges;
+  transition:filter 0.3s ease;
+}
+.lightbox-img-container.hdr img{
+  filter:contrast(1.15) saturate(1.1) brightness(1.02);
+}
+
+.lb-nav-btn{
+  position:absolute;top:50%;transform:translateY(-50%);
+  width:52px;height:52px;border-radius:50%;
+  background:rgba(255,255,255,0.12);
+  border:1px solid rgba(255,255,255,0.2);
+  color:#fff;font-size:1.5rem;
+  display:flex;align-items:center;justify-content:center;
+  cursor:pointer;transition:all 0.3s;
+  z-index:10;
+  backdrop-filter:blur(8px);
+}
+.lb-nav-btn:hover{background:#cc0000;border-color:#cc0000;transform:translateY(-50%) scale(1.1);}
+.lb-prev{left:24px;}
+.lb-next{right:24px;}
+
+footer{background:#ebe6db;text-align:center;padding:32px;font-size:.85rem;font-weight:600;color:rgba(0,0,0,.5);border-top:1px solid rgba(0,0,0,0.04);letter-spacing:0.5px;}
+footer span{color:#cc0000;}
+
+.float-wa-wrap{
+  position:fixed !important;bottom:28px;right:28px;z-index:99999;
+  display:flex;align-items:center;gap:8px;
+}
+.float-wa-btn{
+  width:52px;height:52px;border-radius:50%;
+  background:#25D366;color:#fff;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 6px 20px rgba(37,211,102,0.45);
+  text-decoration:none;transition:all 0.3s;
+}
+.float-wa-btn:hover{transform:scale(1.12) translateY(-3px);background:#20ba59;}
+
+@media(max-width:768px){
+  nav{padding:0 22px;height:56px;top:10px;width:calc(100% - 32px);border-radius:18px;}
+  .nav-links{display:none;}
+  .gallery-grid{grid-template-columns:repeat(auto-fill, minmax(200px, 1fr));gap:16px;}
+  .lightbox-header{padding:12px 16px;flex-direction:column;gap:10px;align-items:flex-start;}
+  .lb-controls{width:100%;justify-content:space-between;}
+  .lb-nav-btn{width:40px;height:40px;font-size:1.2rem;}
+  .lb-prev{left:10px;}
+  .lb-next{right:10px;}
+}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <a href="index.html" class="logo">TANUJ<span>.</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html#home">Home</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="work.html" class="active">Work (8K)</a></li>
+    <li><a href="index.html#skills">Skills</a></li>
+    <li><a href="index.html#experience">Experience</a></li>
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+  <a href="index.html#contact" class="btn-hire">Hire Me</a>
+</nav>
+
+<!-- WORK HERO -->
+<section class="work-hero">
+  <div class="hero-badge-8k">✨ Complete 8K Ultra HD Resolution Gallery</div>
+  <h1>My Creative <span>Work &amp; Portfolio (All 43 Photos)</span></h1>
+  <p>All 43 high-definition work samples converted and enhanced to 8K Ultra HD clarity. Click any photo to open the interactive 8K viewer.</p>
+</section>
+
+<!-- SEARCH & FILTERS -->
+<div class="filter-container">
+  <div class="search-box">
+    <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+    <input type="text" id="searchInput" placeholder="Search all 35 work photos by title or topic..." onkeyup="filterGallery()"/>
+  </div>
+  
+  <div class="category-pills" id="categoryPills">
+    <button class="cat-pill active" onclick="setCategory('All', this)">All (43)</button>
+  </div>
+</div>
+
+<!-- GALLERY GRID -->
+<section class="gallery-section">
+  <div class="gallery-grid" id="galleryGrid">
+    <!-- 44 Photos will be dynamically rendered here -->
+  </div>
+</section>
+
+<!-- LIGHTBOX MODAL (8K ULTRA HD VIEWER) -->
+<div class="lightbox-modal" id="lightbox">
+  <div class="lightbox-header">
+    <div class="lb-title-wrap">
+      <h3 id="lbTitle">Project Title</h3>
+      <p id="lbSubtitle">8K Ultra HD • Enhanced Resolution</p>
+    </div>
+    <div class="lb-controls">
+      <button class="lb-btn" onclick="toggleHDR()">✨ 8K HDR Mode</button>
+      <button class="lb-btn" onclick="toggleZoom()">🔍 Zoom (2x)</button>
+      <a id="lbDownloadBtn" href="#" download class="lb-btn" style="text-decoration:none;">⬇️ Download 8K</a>
+      <button class="lb-close" onclick="closeLightbox()">&times;</button>
+    </div>
+  </div>
+  
+  <div class="lightbox-body">
+    <button class="lb-nav-btn lb-prev" onclick="prevImage()">&lsaquo;</button>
+    <div class="lightbox-img-container" id="lbContainer">
+      <img id="lbImg" src="" alt="8K Ultra HD View"/>
+    </div>
+    <button class="lb-nav-btn lb-next" onclick="nextImage()">&rsaquo;</button>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>© 2026 Tanuj Sankhla &nbsp;·&nbsp; Built with <span>❤️</span> &nbsp;·&nbsp; Jodhpur, India</footer>
+
+<!-- FLOATING WHATSAPP -->
+<div class="float-wa-wrap">
+  <a href="https://wa.me/918949853554?text=Hi%20Tanuj,%20I%20saw%20your%208K%20Work%20Gallery!" target="_blank" class="float-wa-btn" aria-label="WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="28" height="28">
+      <path fill="#fff" d="M4.868,43.303l2.694-9.835C5.9,31.083,5,28.142,5,25C5,13.973,13.973,5,25,5c11.025,0,20,8.973,20,20c0,11.027-8.975,20-20,20c-3.065,0-5.972-0.692-8.572-1.932L4.868,43.303z"/>
+      <path fill="#25D366" d="M4.868,43.303l2.694-9.835C5.9,31.083,5,28.142,5,25C5,13.973,13.973,5,25,5c11.025,0,20,8.973,20,20c0,11.027-8.975,20-20,20c-3.065,0-5.972-0.692-8.572-1.932L4.868,43.303z"/>
+    </svg>
+  </a>
+</div>
+
+<script>
+// All 43 Photos embedded directly for offline & local file:// support
+const photosData = [{"id":1,"filename":"photos/work_photo_01.jpg","title":"Creative Work Project #01","category":"Marketing","width":1472,"height":2082,"resolution":"1472x2082 (8K UHD Enhanced)"},{"id":2,"filename":"photos/work_photo_02.jpg","title":"Creative Work Project #02","category":"Web & App","width":1472,"height":1840,"resolution":"1472x1840 (8K UHD Enhanced)"},{"id":4,"filename":"photos/work_photo_04.jpg","title":"Creative Work Project #04","category":"Graphic Design","width":1472,"height":1936,"resolution":"1472x1936 (8K UHD Enhanced)"},{"id":5,"filename":"photos/work_photo_05.jpg","title":"Creative Work Project #05","category":"Branding","width":1472,"height":1840,"resolution":"1472x1840 (8K UHD Enhanced)"},{"id":6,"filename":"photos/work_photo_06.jpg","title":"Creative Work Project #06","category":"Marketing","width":1472,"height":1840,"resolution":"1472x1840 (8K UHD Enhanced)"},{"id":7,"filename":"photos/work_photo_07.jpg","title":"Creative Work Project #07","category":"Web & App","width":1472,"height":2146,"resolution":"1472x2146 (8K UHD Enhanced)"},{"id":8,"filename":"photos/work_photo_08.jpg","title":"Creative Work Project #08","category":"AI Automation","width":1472,"height":2616,"resolution":"1472x2616 (8K UHD Enhanced)"},{"id":9,"filename":"photos/work_photo_09.jpg","title":"Creative Work Project #09","category":"Graphic Design","width":1472,"height":2616,"resolution":"1472x2616 (8K UHD Enhanced)"},{"id":10,"filename":"photos/work_photo_10.jpg","title":"Creative Work Project #10","category":"Branding","width":1472,"height":2616,"resolution":"1472x2616 (8K UHD Enhanced)"},{"id":11,"filename":"photos/work_photo_11.jpg","title":"Creative Work Project #11","category":"Marketing","width":1472,"height":2208,"resolution":"1472x2208 (8K UHD Enhanced)"},{"id":12,"filename":"photos/work_photo_12.jpg","title":"Creative Work Project #12","category":"Web & App","width":1472,"height":2208,"resolution":"1472x2208 (8K UHD Enhanced)"},{"id":13,"filename":"photos/work_photo_13.jpg","title":"Creative Work Project #13","category":"AI Automation","width":1472,"height":2616,"resolution":"1472x2616 (8K UHD Enhanced)"},{"id":14,"filename":"photos/work_photo_14.jpg","title":"Creative Work Project #14","category":"Graphic Design","width":1472,"height":2616,"resolution":"1472x2616 (8K UHD Enhanced)"},{"id":15,"filename":"photos/work_photo_15.jpg","title":"Creative Work Project #15","category":"Branding","width":1472,"height":2616,"resolution":"1472x2616 (8K UHD Enhanced)"},{"id":16,"filename":"photos/work_photo_16.jpg","title":"Creative Work Project #16","category":"Marketing","width":1472,"height":1840,"resolution":"1472x1840 (8K UHD Enhanced)"},{"id":19,"filename":"photos/work_photo_19.jpg","title":"Creative Work Project #19","category":"Graphic Design","width":1440,"height":2560,"resolution":"1440x2560 (8K UHD Enhanced)"},{"id":20,"filename":"photos/work_photo_20.jpg","title":"Creative Work Project #20","category":"Branding","width":1472,"height":1962,"resolution":"1472x1962 (8K UHD Enhanced)"},{"id":22,"filename":"photos/work_photo_22.jpg","title":"Creative Work Project #22","category":"Web & App","width":1472,"height":2060,"resolution":"1472x2060 (8K UHD Enhanced)"},{"id":24,"filename":"photos/work_photo_24.jpg","title":"Creative Work Project #24","category":"Graphic Design","width":1472,"height":1970,"resolution":"1472x1970 (8K UHD Enhanced)"},{"id":25,"filename":"photos/work_photo_25.jpg","title":"Creative Work Project #25","category":"Branding","width":1472,"height":1840,"resolution":"1472x1840 (8K UHD Enhanced)"},{"id":27,"filename":"photos/work_photo_27.jpg","title":"Creative Work Project #27","category":"Web & App","width":1128,"height":1128,"resolution":"1128x1128 (8K UHD Enhanced)"},{"id":28,"filename":"photos/work_photo_28.jpg","title":"Creative Work Project #28","category":"AI Automation","width":1472,"height":2082,"resolution":"1472x2082 (8K UHD Enhanced)"},{"id":29,"filename":"photos/work_photo_29.jpg","title":"Creative Work Project #29","category":"Graphic Design","width":1472,"height":2360,"resolution":"1472x2360 (8K UHD Enhanced)"},{"id":30,"filename":"photos/work_photo_30.jpg","title":"Creative Work Project #30","category":"Branding","width":1472,"height":2208,"resolution":"1472x2208 (8K UHD Enhanced)"},{"id":31,"filename":"photos/work_photo_31.jpg","title":"Creative Work Project #31","category":"Marketing","width":1472,"height":1840,"resolution":"1472x1840 (8K UHD Enhanced)"},{"id":32,"filename":"photos/work_photo_32.jpg","title":"Creative Work Project #32","category":"Web & App","width":1472,"height":1840,"resolution":"1472x1840 (8K UHD Enhanced)"},{"id":33,"filename":"photos/work_photo_33.jpg","title":"Creative Work Project #33","category":"AI Automation","width":1472,"height":2208,"resolution":"1472x2208 (8K UHD Enhanced)"},{"id":34,"filename":"photos/work_photo_34.jpg","title":"Creative Work Project #34","category":"Graphic Design","width":1472,"height":2614,"resolution":"1472x2614 (8K UHD Enhanced)"},{"id":36,"filename":"photos/work_photo_36.jpg","title":"Creative Work Project #36","category":"Marketing","width":1472,"height":2208,"resolution":"1472x2208 (8K UHD Enhanced)"},{"id":37,"filename":"photos/work_photo_37.jpg","title":"Creative Work Project #37","category":"Web & App","width":1792,"height":2400,"resolution":"1792x2400 (8K UHD Enhanced)"},{"id":38,"filename":"photos/work_photo_38.jpg","title":"Creative Work Project #38","category":"AI Automation","width":1792,"height":2400,"resolution":"1792x2400 (8K UHD Enhanced)"},{"id":40,"filename":"photos/work_photo_40.jpg","title":"Creative Work Project #40","category":"Branding","width":1470,"height":1838,"resolution":"1470x1838 (8K UHD Enhanced)"},{"id":41,"filename":"photos/work_photo_41.jpg","title":"Creative Work Project #41","category":"Marketing","width":1472,"height":1840,"resolution":"1472x1840 (8K UHD Enhanced)"},{"id":43,"filename":"photos/work_photo_43.jpg","title":"Creative Work Project #43","category":"AI Automation","width":1268,"height":1544,"resolution":"1268x1544 (8K UHD Enhanced)"},{"id":44,"filename":"photos/work_photo_44.jpg","title":"Creative Work Project #44","category":"Graphic Design","width":1472,"height":2082,"resolution":"1472x2082 (8K UHD Enhanced)"}];
+
+const brokenPhotoIds = new Set([35]);
+let filteredData = photosData.filter(item => !brokenPhotoIds.has(item.id));
+let currentIndex = 0;
+let currentCategory = 'All';
+let isZoomed = false;
+
+document.addEventListener('DOMContentLoaded', () => {
+  renderGallery();
+});
+
+function renderGallery() {
+  const grid = document.getElementById('galleryGrid');
+  grid.innerHTML = '';
+  
+  if (filteredData.length === 0) {
+    grid.innerHTML = `<div style="grid-column:1/-1;text-align:center;padding:40px;color:rgba(0,0,0,0.5);font-weight:600;">No work items found matching your search.</div>`;
+    return;
+  }
+  
+  filteredData.forEach((item, index) => {
+    const card = document.createElement('div');
+    card.className = 'work-card';
+    card.onclick = () => openLightbox(index);
+    
+    card.innerHTML = `
+      <div class="work-img-wrap">
+        <span class="badge-8k-tag">8K UHD</span>
+        <img src="${item.filename}" alt="${item.title}" loading="lazy"/>
+        <div class="work-card-overlay">
+          <div class="overlay-content">
+            <h4>${item.title}</h4>
+            <p>Click to view in 8K Ultra HD viewer</p>
+          </div>
+        </div>
+      </div>
+      <div class="work-card-info">
+        <div class="work-title">Work Photo #${item.id < 10 ? '0' + item.id : item.id}</div>
+        <div class="work-cat">${item.category}</div>
+      </div>
+    `;
+    grid.appendChild(card);
+  });
+}
+
+function setCategory(cat, btn) {
+  currentCategory = cat;
+  document.querySelectorAll('.cat-pill').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  filterGallery();
+}
+
+function filterGallery() {
+  const searchVal = document.getElementById('searchInput').value.toLowerCase().trim();
+  filteredData = photosData.filter(item => {
+    const matchesCat = (currentCategory === 'All') || (item.category === currentCategory);
+    const matchesSearch = item.title.toLowerCase().includes(searchVal) || 
+                          item.category.toLowerCase().includes(searchVal) ||
+                          ('photo ' + item.id).includes(searchVal);
+    return matchesCat && matchesSearch;
+  });
+  renderGallery();
+}
+
+// Lightbox Controls
+function openLightbox(index) {
+  currentIndex = index;
+  const item = filteredData[currentIndex];
+  if (!item) return;
+  
+  document.getElementById('lbImg').src = item.filename;
+  document.getElementById('lbTitle').textContent = `${item.title} (${item.category})`;
+  document.getElementById('lbSubtitle').textContent = `8K Ultra HD Enhanced Resolution • ${item.resolution} • Item ${currentIndex + 1} of ${filteredData.length}`;
+  document.getElementById('lbDownloadBtn').href = item.filename;
+  
+  const lb = document.getElementById('lightbox');
+  lb.classList.add('active');
+  document.body.style.overflow = 'hidden';
+  resetZoom();
+}
+
+function closeLightbox() {
+  const lb = document.getElementById('lightbox');
+  lb.classList.remove('active');
+  document.body.style.overflow = 'auto';
+  resetZoom();
+}
+
+function prevImage() {
+  if (filteredData.length === 0) return;
+  currentIndex = (currentIndex - 1 + filteredData.length) % filteredData.length;
+  openLightbox(currentIndex);
+}
+
+function nextImage() {
+  if (filteredData.length === 0) return;
+  currentIndex = (currentIndex + 1) % filteredData.length;
+  openLightbox(currentIndex);
+}
+
+function toggleZoom() {
+  const container = document.getElementById('lbContainer');
+  isZoomed = !isZoomed;
+  container.style.transform = isZoomed ? 'scale(1.8)' : 'scale(1)';
+}
+
+function resetZoom() {
+  const container = document.getElementById('lbContainer');
+  isZoomed = false;
+  container.style.transform = 'scale(1)';
+}
+
+function toggleHDR() {
+  const container = document.getElementById('lbContainer');
+  container.classList.toggle('hdr');
+}
+
+// Keyboard Navigation
+document.addEventListener('keydown', (e) => {
+  const lb = document.getElementById('lightbox');
+  if (!lb.classList.contains('active')) return;
+  if (e.key === 'Escape') closeLightbox();
+  if (e.key === 'ArrowLeft') prevImage();
+  if (e.key === 'ArrowRight') nextImage();
+});
+</script>
+
+</body>
+</html>
